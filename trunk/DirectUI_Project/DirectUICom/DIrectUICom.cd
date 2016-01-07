@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CDirectUIComModule" Collapsed="true">
+    <Position X="12" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAABAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DirectUICom.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CProxy_ICtrlPluginPropEvents&lt;T&gt;" Collapsed="true">
+    <Position X="9.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>_ICtrlPluginPropEvents_CP.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CProxy_IDirectUIEvents&lt;T&gt;" Collapsed="true">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>_IDirectUIEvents_CP.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CProxy_IDUIControlBaseEvents&lt;T&gt;" Collapsed="true">
+    <Position X="6.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>_IDUIControlBaseEvents_CP.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CProxy_IDUIPropBaseEvents&lt;T&gt;" Collapsed="true">
+    <Position X="3.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>_IDUIPropBaseEvents_CP.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CProxy_IDUIPropTypeEvents&lt;T&gt;" Collapsed="true">
+    <Position X="0.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>_IDUIPropTypeEvents_CP.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CProxy_IDUIRenderDCEvents&lt;T&gt;" Collapsed="true">
+    <Position X="6.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>_IDUIRenderDCEvents_CP.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CProxy_IDUIRenderImageEvents&lt;T&gt;" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>_IDUIRenderImageEvents_CP.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CProxy_IImageSecPropEvents&lt;T&gt;" Collapsed="true">
+    <Position X="3.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>_IImageSecPropEvents_CP.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CProxy_ISkinObjResBaseEvents&lt;T&gt;" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>_ISkinObjResBaseEvents_CP.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CCtrlPluginProp" Collapsed="true">
+    <Position X="9.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>0QkBgIEAZCAAECQAAAAAJjQAYAGAAAhAJUSAEVwAUcA=</HashCode>
+      <FileName>CtrlPluginProp.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CDirectUI" Collapsed="true">
+    <Position X="9.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAEAoAACAEAAAgAAAACAAAAIQAAAAEFAAAAAQRAAJdA=</HashCode>
+      <FileName>DirectUI.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CDUIControlBase" Collapsed="true">
+    <Position X="6.5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ECAAoICCAGAAAkIBAACSABAIQDAAAAFARAAOQRAIBVA=</HashCode>
+      <FileName>DUIControlBase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CDUIObj" Collapsed="true">
+    <Position X="13.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAABgAAAAAAAAAAAIAiAAAAIQAAAAAFAAAAAQRAABVA=</HashCode>
+      <FileName>DUIObj.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CDUIPropBase" Collapsed="true">
+    <Position X="3.5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAiAAAAAAAAAAAAAIAKAAAQAAAAAFQAAAAQZAADGA=</HashCode>
+      <FileName>DUIPropBase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CDUIPropType" Collapsed="true">
+    <Position X="0.5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wAAIgQAgBAAAABgAAAAIBQAQSAIAAABAABABARhBUMA=</HashCode>
+      <FileName>DUIPropType.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CDUIRenderDC" Collapsed="true">
+    <Position X="6.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAgAAAAAAAiAARAAAAABAAAAAARAAAEA=</HashCode>
+      <FileName>DUIRenderDC.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CDUIRenderImage" Collapsed="true">
+    <Position X="6.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAQAAAAABAAAAAARAAAkA=</HashCode>
+      <FileName>DUIRenderImage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CDUIRes" Collapsed="true">
+    <Position X="15.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAgAAAAAAAAIAAAACECAAAQAAACABABAAAARAACkA=</HashCode>
+      <FileName>DUIRes.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CImageSecProp" Collapsed="true">
+    <Position X="3.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAgEAAAAABAAAAAAIAKAAAQAAAEAFQABAAQZAADGA=</HashCode>
+      <FileName>ImageSecProp.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSkinObjResBase" Collapsed="true">
+    <Position X="0.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAIAoAACAAAIAEAAAACAAAAIQAAAAAFAAAAAQRAABVA=</HashCode>
+      <FileName>SkinObjResBase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="IDUIObj" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAACAAAAIAAAAAAEAAAAAQAAABQA=</HashCode>
+      <FileName>DirectUICom.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="IDUIRes" Collapsed="true">
+    <Position X="12" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAIAAAAAEAAAAAAAACAAAAAAAAAAACgA=</HashCode>
+      <FileName>DirectUICom.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ISkinObjResBase" Collapsed="true">
+    <Position X="1.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DirectUICom.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="IDirectUI" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAIA=</HashCode>
+      <FileName>DirectUICom.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="IDUIControlBase" Collapsed="true">
+    <Position X="2.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAICAACAAAEIBAAACAAAAADAAAAAAQAAOABAIAAA=</HashCode>
+      <FileName>DirectUICom.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="IDUIRenderDC" Collapsed="true">
+    <Position X="17.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAiAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DirectUICom.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ICtrlPluginProp" Collapsed="true">
+    <Position X="13.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UQkAAAAAYCAAAAQAAAAAJDAAIAGAAAAAIUSAEEwAAYA=</HashCode>
+      <FileName>DirectUICom.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="IDUIPropBase" Collapsed="true">
+    <Position X="9.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAKAAAAAAAAAEQAAAAQIAADCA=</HashCode>
+      <FileName>DirectUICom.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="IDUIRenderImage" Collapsed="true">
+    <Position X="19" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DirectUICom.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="IDUIPropType" Collapsed="true">
+    <Position X="15.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wAAIAQAgAAAAABAAAAAABQAQCAAAAAAAAAAAABhAEAA=</HashCode>
+      <FileName>DirectUICom.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="IImageSecProp" Collapsed="true">
+    <Position X="9.5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAABAAAAAACAA=</HashCode>
+      <FileName>DirectUICom.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="SkinRect" Collapsed="true">
+    <Position X="13.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAAgAAAAIAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>DirectUICom.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="DUINotify" Collapsed="true">
+    <Position X="12" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAIAAgAAAAAAAAAAAAAAAAAAAAAAAABgHAA=</HashCode>
+      <FileName>DirectUICom.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="DUIImageBase" Collapsed="true">
+    <Position X="19" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAQAAAAAAAAAIAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>DirectUICom.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_ISkinObjResBaseEvents" Collapsed="true">
+    <Position X="17.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DirectUICom.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_IDirectUIEvents" Collapsed="true">
+    <Position X="13.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DirectUICom.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_IDUIControlBaseEvents" Collapsed="true">
+    <Position X="15.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DirectUICom.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_IDUIRenderDCEvents" Collapsed="true">
+    <Position X="12" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DirectUICom.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_ICtrlPluginPropEvents" Collapsed="true">
+    <Position X="12" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DirectUICom.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_IDUIPropBaseEvents" Collapsed="true">
+    <Position X="17.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DirectUICom.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_IDUIRenderImageEvents" Collapsed="true">
+    <Position X="13.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DirectUICom.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_IDUIPropTypeEvents" Collapsed="true">
+    <Position X="19" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DirectUICom.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_IImageSecPropEvents" Collapsed="true">
+    <Position X="15.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DirectUICom.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="enumDUIObjType" Collapsed="true">
+    <Position X="13.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAASAAAAAAgAAAAAAgAABAAAAAAAAAABAAIAAAAA=</HashCode>
+      <FileName>DirectUICom.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="enumPropType" Collapsed="true">
+    <Position X="15.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAQAAABACIAAAAAAEBACAAAQAAAFAAAAAAAAAABASAA=</HashCode>
+      <FileName>DirectUICom.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="DUIMsgID" Collapsed="true">
+    <Position X="12" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FAIEwlIAEQACCQAlQQgJIQMESAAAigAMAJAEAQQMAAw=</HashCode>
+      <FileName>DirectUICom.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="微软雅黑" Size="9" />
+</ClassDiagram>
