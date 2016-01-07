@@ -1,0 +1,26 @@
+HKCR
+{
+	DirectUICom.TextStyleProp.1 = s 'TextStyleProp Class'
+	{
+		CLSID = s '{3453EFAB-DB30-4932-AF56-7B4DAC898B26}'
+	}
+	DirectUICom.TextStyleProp = s 'TextStyleProp Class'
+	{
+		CLSID = s '{3453EFAB-DB30-4932-AF56-7B4DAC898B26}'
+		CurVer = s 'DirectUICom.TextStyleProp.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {3453EFAB-DB30-4932-AF56-7B4DAC898B26} = s 'TextStyleProp Class'
+		{
+			ProgID = s 'DirectUICom.TextStyleProp.1'
+			VersionIndependentProgID = s 'DirectUICom.TextStyleProp'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Both'
+			}
+			'TypeLib' = s '{8DFE948B-ABC6-4FCA-8BEF-28FA10C8D799}'
+		}
+	}
+}

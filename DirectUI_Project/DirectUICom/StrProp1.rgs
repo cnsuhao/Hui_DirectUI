@@ -1,0 +1,26 @@
+HKCR
+{
+	DirectUICom.StrProp.1 = s 'StrProp Class'
+	{
+		CLSID = s '{6B95B283-8A69-4B69-9995-ACF413615FB3}'
+	}
+	DirectUICom.StrProp = s 'StrProp Class'
+	{
+		CLSID = s '{6B95B283-8A69-4B69-9995-ACF413615FB3}'
+		CurVer = s 'DirectUICom.StrProp.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {6B95B283-8A69-4B69-9995-ACF413615FB3} = s 'StrProp Class'
+		{
+			ProgID = s 'DirectUICom.StrProp.1'
+			VersionIndependentProgID = s 'DirectUICom.StrProp'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Both'
+			}
+			'TypeLib' = s '{8DFE948B-ABC6-4FCA-8BEF-28FA10C8D799}'
+		}
+	}
+}
