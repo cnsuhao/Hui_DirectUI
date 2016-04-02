@@ -6,7 +6,7 @@
 
 
  /* File created by MIDL compiler version 7.00.0500 */
-/* at Thu Jan 07 17:12:19 2016
+/* at Sat Apr 02 21:24:36 2016
  */
 /* Compiler settings for .\DirectUICom.idl:
     Oicf, W1, Zp8, env=Win32 (32b run)
