@@ -4,6 +4,7 @@
 #include "DUIRes.h"
 #include "DirectUI.h"
 
+
 // CDUIRes
 CDUIRes::CDUIRes()
 {
@@ -96,14 +97,14 @@ STDMETHODIMP CDUIRes::CreateControl(IDirectUI* pDirectUI,BSTR strCLSID,IDUIContr
 
 STDMETHODIMP CDUIRes::LoadImage(BSTR strImagePath,IDUIRenderImage **ppResult)
 {
-	IRenderImage_ *pImage = new CRenderImage_GDI_();
+//	IRenderImage_ *pImage = new CRenderImage_GDI_();
 
 	IDUIRenderImage *pDUIImage = NULL;
 	::CoCreateInstance(__uuidof(DUIRenderImage), NULL, CLSCTX_INPROC_SERVER, IID_IDispatch, (void**)&pDUIImage);
 
 	*ppResult = pDUIImage;
 
-	pImage->SetDispatch(pDUIImage);
+//	pImage->SetDispatch(pDUIImage);
 
 	return S_OK;
 }

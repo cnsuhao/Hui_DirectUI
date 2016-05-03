@@ -42,3 +42,5 @@ using namespace std;
 #else
 #define KDUI32_API __declspec(dllimport)
 #endif
+
+

@@ -76,7 +76,9 @@ STDMETHODIMP CCommandButton::CreateProps(VARIANT_BOOL* pbResult)
 
 STDMETHODIMP CCommandButton::RenderDrawObject(IDUIRenderDC* pDC, SkinRect* rect, VARIANT_BOOL* pbResult)
 {
-	///////////	
+	///////////
+	OLE_HANDLE hDC;
+	pDC->GetRenderDCPtr(&hDC);
 
 	switch ( m_eState )
 	{
@@ -136,13 +138,33 @@ STDMETHODIMP CCommandButton::EventNotify(DUINotify *peVentNotify,VARIANT_BOOL *p
 			LONG x = peVentNotify->lParam2;
 			LONG y = peVentNotify->lParam3;
 			//返回值
-			LONG* pnResult = (LONG*)peVentNotify->lParam4;
+			//LONG* pnResult = (LONG*)peVentNotify->lParam4;
+			HWND hWnd = (HWND)peVentNotify->lParam5;
 
+
+			///////////
+			HDC hDC = (HDC)peVentNotify->lParam2;
 			m_eState = DUI_BUTTON_STATUS_PRESS;
+
+			SkinRect rect;
+			GetRect(&rect);
+			RECT rc;
+			rc.left = rect.left;
+			rc.top = rect.top;
+			rc.right = rect.right;
+			rc.bottom = rect.bottom;
+			//InvalidateRect(hWnd, &rc, FALSE);
+			
+			
+//			RenderDrawObject((IDUIRenderDC*)hDC, &rect, pbResult);
+
+			::PostMessage(hWnd, DUISM_LBUTTONDOWN, (WPARAM)peVentNotify->lParam4, 0);
+
+			
 
 			*pbResult = VARIANT_TRUE;
 
-			MessageBox(NULL,_T("DirectUI EventNotify: LButtonDown"), _T("CommandButton"), MB_OK);
+	//		MessageBox(NULL,_T("DirectUI EventNotify: LButtonDown"), _T("CommandButton"), MB_OK);
 		}
 		break;
 
@@ -151,11 +173,22 @@ STDMETHODIMP CCommandButton::EventNotify(DUINotify *peVentNotify,VARIANT_BOOL *p
 			//HitTest Code,保留，目前始终为HTCLIENT.
 			LONG nHitTest = peVentNotify->lParam1;
 			//CPoint的x,y值,相对DirectUI客户区位置.
-			LONG x = peVentNotify->lParam2;
+			LONG x = peVentNotify->lParam2; //是否在btn区域内
 			LONG y = peVentNotify->lParam3;
 			//返回值
 			LONG* pnResult = (LONG*)peVentNotify->lParam4;
-			*pbResult = VARIANT_FALSE;
+
+			
+			if ( x == 1 )
+			{
+				m_eState = DUI_BUTTON_STATUS_HOT;
+			}
+			else
+			{
+				m_eState = DUI_BUTTON_STATUS_NORMAL;
+			}
+
+			*pbResult = VARIANT_TRUE;
 
 			//MessageBox(NULL,_T("DirectUI EventNotify: LButtonUp"), _T("CommandButton"), MB_OK);
 		}
@@ -379,10 +412,12 @@ STDMETHODIMP CCommandButton::EventNotify(DUINotify *peVentNotify,VARIANT_BOOL *p
 		{
 			LONG* pnResult = (LONG*)peVentNotify->lParam1;
 
-			*pbResult = VARIANT_TRUE;
+			HDC hdc = (HDC)peVentNotify->lParam4;
 
 			//////////////
 			m_eState = DUI_BUTTON_STATUS_NORMAL;
+			
+			*pbResult = VARIANT_TRUE;
 		}
 		break;
 
@@ -546,6 +581,17 @@ STDMETHODIMP CCommandButton::SetBackImage(DUIImageBase *pImageBase,eDUI_BUTTON_S
 	if (pImageProp == NULL) return S_FALSE;
 
 	pImageProp->SetImageBase(pImageBase,pbResult);
+
+	*pbResult = VARIANT_TRUE;
+
+	return S_OK;
+}
+
+STDMETHODIMP CCommandButton::SetFont(BSTR strName, short nSize, VARIANT_BOOL bBold, VARIANT_BOOL* pbResult)
+{
+	*pbResult = VARIANT_FALSE;
+
+	m_pTextStyleProp->SetFont(strName, nSize, bBold,pbResult);
 
 	*pbResult = VARIANT_TRUE;
 

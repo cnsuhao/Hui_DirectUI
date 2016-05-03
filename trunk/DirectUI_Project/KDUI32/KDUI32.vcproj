@@ -176,7 +176,19 @@
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
+				RelativePath=".\IRenderDC_.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\IRenderImage_.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\KDUI32.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\SkinObjResBase_.cpp"
 				>
 			</File>
 			<File
@@ -199,10 +211,6 @@
 					/>
 				</FileConfiguration>
 			</File>
-			<File
-				RelativePath=".\Subclass.cpp"
-				>
-			</File>
 		</Filter>
 		<Filter
 			Name="Í·ÎÄ¼þ"
@@ -210,15 +218,39 @@
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
 			<File
+				RelativePath=".\defines.h"
+				>
+			</File>
+			<File
+				RelativePath=".\IRenderDC_.h"
+				>
+			</File>
+			<File
+				RelativePath=".\IRenderImage_.h"
+				>
+			</File>
+			<File
 				RelativePath=".\KDUI32.h"
 				>
 			</File>
 			<File
-				RelativePath=".\stdafx.h"
+				RelativePath=".\SkinImageBase_.h"
 				>
 			</File>
 			<File
-				RelativePath=".\subclass.h"
+				RelativePath=".\SkinObjResBase_.h"
+				>
+			</File>
+			<File
+				RelativePath=".\SkinPicture_.h"
+				>
+			</File>
+			<File
+				RelativePath=".\SkinShareObj_.h"
+				>
+			</File>
+			<File
+				RelativePath=".\stdafx.h"
 				>
 			</File>
 		</Filter>

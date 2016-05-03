@@ -72,6 +72,7 @@ interface ISkinObjResBase : IDUIObj{
 interface IDirectUI : ISkinObjResBase{
 	[id(201), helpstring("方法Create")] HRESULT Create([in]OLE_HANDLE hWnd,[in]SkinRect rect,[out,retval]VARIANT_BOOL* pbResult);
 	[id(202), helpstring("方法GetHwnd")] HRESULT GetHwnd([out,retval]OLE_HANDLE * phResult);
+	//[id(203), helpstring("方法GetObjectByCaption")] HRESULT GetObjectByCaption([in] DUIOBJETYPE_PLUGIN, [in]BSTR strCaption, [in]VARIANT_BOOL bDigui);
 };
 
 
@@ -251,6 +252,7 @@ interface IStrProp : IDUIPropBase{
 ]
 interface ITextStyleProp : IDUIPropBase{
 	[id(101), helpstring("方法RenderDraw")] HRESULT RenderDraw([in] IDUIRenderDC* pDC, [in] SkinRect* rect, [in] BSTR strValue, [out,retval] VARIANT_BOOL* pbResult);
+	[id(102), helpstring("方法SetFont")] HRESULT SetFont([in] BSTR strFontName, [in] short nSize, [in] VARIANT_BOOL bBold, [out,retval] VARIANT_BOOL* pbResult);
 };
 [
 	uuid(8DFE948B-ABC6-4FCA-8BEF-28FA10C8D799),

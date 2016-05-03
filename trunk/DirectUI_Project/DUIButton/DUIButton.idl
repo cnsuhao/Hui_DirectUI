@@ -23,6 +23,7 @@ import "DirectUICom.idl";
 interface ICommandButton : IDUIControlBase{
 	[id(500), helpstring("方法SetText")]HRESULT SetText([in]BSTR strText,[out,retval]VARIANT_BOOL* pbResult);
 	[id(501), helpstring("方法SetBackImage")] HRESULT SetBackImage([in]DUIImageBase *pImageBase,[in]eDUI_BUTTON_STATUS eStatus,[out,retval]VARIANT_BOOL* pbResult);
+	[id(502), helpstring("方法SetFont")]HRESULT SetFont([in]BSTR strName, [in]short nSize, [in]VARIANT_BOOL bBold, [out,retval]VARIANT_BOOL* pbResult);
 };
 [
 	uuid(232589C6-ADC9-4B95-8D3F-CBBFCAEC5999),

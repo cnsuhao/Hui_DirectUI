@@ -33,8 +33,6 @@ enum enumDUIObjType
 	DUI_OBJTYPE_LAST	
 }enumDUIObjType;
 
-
-
 typedef
 [
 	uuid(BBE08163-E8B9-4d5a-884F-C06FE15A4164),
@@ -177,18 +175,39 @@ struct DUINotify
 
 }DUINotify;
 
+//2016/01/11
+typedef
+[
+	uuid(61A537CB-1AA9-40e8-8AA5-F6EBCA81C998),
+	version(1.0),
+	helpstring("DirectUI enum DUIPICTYPE")
+]
+
+enum enumDUIPICTYPE
+{
+	DUI_PICTYPE_BMP = 0,
+	DUI_PICTYPE_PNG,
+	DUI_PICTYPE_ICO,
+	DUI_PICTYPE_GIF,
+
+	DUI_PICTYPE_LAST
+}enumDUIPICTYPE;
+
 typedef
 [
 	uuid(0F82FEC6-B850-419a-AB30-8C66B54A57D9),
 	version(1.0),
 	helpstring("DirectUI ImageBase Struct")
 ]
+
 struct DUIImageBase
 {
 	BSTR strImagePath;
 	SkinRect rect;
 	SkinRect rcBorder;
 	VARIANT_BOOL bStretch;
+
+	enumDUIPICTYPE picType;//2016/01/11
 }DUIImageBase;
 
 
