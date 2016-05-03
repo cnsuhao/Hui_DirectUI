@@ -14,7 +14,6 @@
 #endif
 
 
-
 // CCommandButton
 
 class ATL_NO_VTABLE CCommandButton :
@@ -63,7 +62,6 @@ private:
 
 	ITextStyleProp* m_pTextStyleProp;
 	IStrProp* m_pTextContent;
-
 public:
 	DECLARE_CONTROLBASE_NORENDERDRAWOBJECT()
 	STDMETHOD(FinalCreate)(VARIANT_BOOL bNewObject);
@@ -73,6 +71,8 @@ public:
 
 	STDMETHOD(SetText)(BSTR strText,VARIANT_BOOL* pbResult);
 	STDMETHOD(SetBackImage)(DUIImageBase *pImageBase,eDUI_BUTTON_STATUS eStatus,VARIANT_BOOL* pbResult);
+
+	STDMETHOD(SetFont)(BSTR strName, short nSize, VARIANT_BOOL bBold, VARIANT_BOOL* pbResult);
 
 };
 

@@ -72,10 +72,15 @@ private:
 	IDUIPropBase *m_pPropBase;
 	SkinImageBase_ *m_pImageBase;
 
+	_bstr_t m_strFontName;
+	short	m_nSize;
+	bool	m_bBold;
+
 public:
 	INTERFACE_PROP_BASE_IMPL_DEFAULT(m_pPropBase)
 
 	STDMETHOD(RenderDraw)(IDUIRenderDC* pDC, SkinRect* rect, BSTR strValue, VARIANT_BOOL* pbResult);
+	STDMETHOD(SetFont)(BSTR strFontName, short nSize, VARIANT_BOOL bBold, VARIANT_BOOL* pbResult);
 };
 
 OBJECT_ENTRY_AUTO(__uuidof(TextStyleProp), CTextStyleProp)

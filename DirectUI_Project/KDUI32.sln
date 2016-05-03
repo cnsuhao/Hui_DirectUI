@@ -2,9 +2,6 @@
 Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KDUI32", "KDUI32\KDUI32.vcproj", "{0D3202B0-72A3-4AC0-AEF6-BFDBB0202C37}"
-	ProjectSection(ProjectDependencies) = postProject
-		{2A5C093D-BAA5-44E8-9236-F810A4A77BB8} = {2A5C093D-BAA5-44E8-9236-F810A4A77BB8}
-	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DirectUICom", "DirectUICom\DirectUICom.vcproj", "{2A5C093D-BAA5-44E8-9236-F810A4A77BB8}"
 EndProject

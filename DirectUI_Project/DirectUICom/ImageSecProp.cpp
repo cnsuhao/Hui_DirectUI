@@ -44,7 +44,7 @@ STDMETHODIMP CImageSecProp::SetImageBase(DUIImageBase *pImgbase,VARIANT_BOOL* pb
 	USES_CONVERSION;
 	LPCTSTR strName = W2T(pImgbase->strImagePath);
 	pSkinPicture->SetName(strName);
-	pSkinPicture->LoadImage(strName);
+	pSkinPicture->LoadImage(strName, pImgbase->picType);
 	
 	m_pImageBase->SetPicture(pSkinPicture);
 

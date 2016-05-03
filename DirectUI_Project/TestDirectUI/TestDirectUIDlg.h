@@ -2,7 +2,7 @@
 //
 
 #pragma once
-
+#include "..\\DUIButton\\DUIButton.h"
 
 // CTestDirectUIDlg dialog
 class CTestDirectUIDlg : public CDialog
@@ -33,4 +33,8 @@ protected:
 public:
 	afx_msg int OnCreate(LPCREATESTRUCT lpCreateStruct);
 	virtual BOOL PreTranslateMessage(MSG* pMsg);
+	afx_msg LRESULT OnLButtonDownA(WPARAM wParam, LPARAM lParam);
+private:
+	ICommandButton *m_pButton;
+	ICommandButton *m_pButton2;
 };

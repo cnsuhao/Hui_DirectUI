@@ -58,6 +58,9 @@ END_CONNECTION_POINT_MAP()
 
 public:
 
+private:
+	IRenderImage_ *m_pImage;
+
 };
 
 OBJECT_ENTRY_AUTO(__uuidof(DUIRenderImage), CDUIRenderImage)

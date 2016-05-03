@@ -35,3 +35,12 @@ STDMETHODIMP CTextStyleProp::RenderDraw(IDUIRenderDC* pDC, SkinRect* rect, BSTR 
 
 	return S_OK;
 }
+
+STDMETHODIMP CTextStyleProp::SetFont(BSTR strFontName, short nSize, VARIANT_BOOL bBold, VARIANT_BOOL* pbResult)
+{
+	// TODO: 在此添加实现代码
+
+	m_pImageBase->SetTextFont(strFontName, nSize, bBold);
+
+	return S_OK;
+}
